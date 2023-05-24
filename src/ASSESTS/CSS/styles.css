@@ -1,6 +1,348 @@
-/* -------------------------------------------------------------GERAL -------------------------------------------------------------*/
+/* ------------------RESET----------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ------------------VARIAVÉIS----------------*/
+:root {
+    --color-escura: #080707;
+    --color-light: #f2f2f2;
+    --color-neutra: #fff;
+    --color-cinza: #838383;
+    --font-azul: #00f;
+    --font-azul-escuro: rgb(9, 9, 153);
+
+    --font-title: 'Great Vibes', cursive;
+    ;
+    --font-default: 'Roboto', sans-serif;
+
+}
+
+/* ------------------DIVS DEFAULT----------------*/
+.container {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+/* ------------------CABEÇALHO----------------*/
+header {
+    background-color: var(--color-escura);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid var(--color-neutra);
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    color: var(--color-light);
+    font-family: var(--font-default);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #1c1c1c;
+
+}
+
+/* ------------------BANNER----------------*/
+
+#home {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-light);
+    padding: 100px 0;
+}
+
+#home .textos-banner {
+    color: var(--color-escura);
+    font-family: var(--font-title);
+
+}
+
+.textos-banner h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
+.textos-banner h3 {
+    font-size: 30px;
+}
+
+.image-banner {
+    margin-top: 30px;
+}
+
+.image-banner img {
+    border-radius: 5px;
+}
+
+/* ------------------BIOGRAFIA----------------*/
+#bio {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-escura);
+    align-items: center;
+    padding: 100px 0;
+}
+
+.image-bio {
+    flex: 1;
+}
+
+.image-bio img {
+    border-radius: 5px;
+    border: 10px double var(--color-light);
+}
+
+.textos-bio {
+
+    flex: 2;
+    color: var(--color-light);
+
+}
+
+.titulos-bio h2 {
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+    font-size: 50px;
+}
+
+.resume-bio {
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.resume-bio a {
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 10px 40px;
+    transition: all 3s ease;
+    border-radius: 5px;
+    border: 2px solid var(--color-light);
+
+}
+
+.resume-bio a:hover {
+    border: 2px dotted var(--color-light);
+}
+
+/* ------------------LIVROS----------------*/
+
+#livros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: var(--color-light);
+}
+
+.estante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-livros {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.titulo-livros h3 {
+    font-family: var(--font-title);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.card-livros {
+    flex: 2;
+    background-color: var(--color-neutra);
+    padding: 50px 30px;
+    border-radius: 5px;
+    margin: 0 10px;
+
+}
+
+.image-livro {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-livro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.conteudo-livros h4 {
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.conteudo-livros {
+    font-family: var(--font-default);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.conteudo-livros a {
+    text-decoration: none;
+    color: var(--color-neutra);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 30px;
+    transition: all 2s ease;
+    border-radius: 5px;
+    border: 2px solid var(--font-azul);
+    background-color: var(--font-azul);
+
+
+}
+
+.conteudo-livros a:hover {
+    background-color: var(--font-azul-escuro);
+
+
+}
+
+/* ------------------FILMES----------------*/
+#filmes {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-escura);
+    align-items: center;
+    padding: 100px 0;
+}
+
+.titulo-filmes h3 {
+    color: var(--color-light);
+    font-family: var(--font-title);
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.card-filmes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-neutra);
+    padding: 30px 60px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.conteudo-filme {
+    margin-left: 30px;
+}
+
+.conteudo-filme {
+    font-family: var(--font-default);
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.conteudo-filme h4 {
+    font-family: var(--font-title);
+    font-size: 30px;
+}
+
+.conteudo-filme a {
+    text-decoration: none;
+    color: var(--color-neutra);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 30px;
+    transition: all 2s ease;
+    border-radius: 5px;
+    border: 2px solid var(--font-azul);
+    background-color: var(--font-azul);
+
+}
+
+.conteudo-filme a:hover {
+    background-color: var(--font-azul-escuro);
+}
+
+/* ------------------RODAPÉ----------------*/
+
+#mais-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    padding: 20px 0;
+}
+
+.social-media {
+    padding: 15px 0;
+}
+
+.social-media a i {
+    background-color: var(--font-azul);
+    color: var(--color-neutra);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 2s ease-in;
+}
+
+.social-media a i:hover {
+    background-color: var(--font-azul-escuro);
+
+}
+
+.textos-rodape {
+    color: var(--color-escura);
+    font-family: var(--font-default);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.textos-rodape a {
+    text-decoration: none;
+    color: var(--color-escura);
+    transition: all 2s ease;
+
+}
+
+.textos-rodape a:hover {
+    border-bottom: 5px dotted var(--font-azul-escuro);
+
 }
