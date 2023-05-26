@@ -1,0 +1,55 @@
+/*Primeira quebra 780px*/
+
+@media only screen and (max-width:780px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .textos-bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .estante {
+        justify-content: center;
+    }
+}
+
+/*Quebra da Adicionar Menu Mobile  */
+@media only screen and (max-width:600px) {
+    .menu-lines {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 70px;
+        left: 0;
+        gap: 40px;
+        width: 70vw;
+        margin-left: -70vw;
+        height: 100vh;
+        padding-left: 40px;
+        z-index: 996;
+        background-color: #080707;
+        transition: all 2s ease;
+
+    }
+
+    .menu #fake:checked~ul {
+        margin-left: 0vw;
+
+    }
+
+    nav ul li a {
+        font-size: 15px;
+
+    }
+
+}
