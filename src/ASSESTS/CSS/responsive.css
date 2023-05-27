@@ -16,13 +16,19 @@
 
     .estante {
         justify-content: center;
+
     }
+
+
 }
 
 /*Quebra da Adicionar Menu Mobile  */
 @media only screen and (max-width:600px) {
     .menu-lines {
         display: block;
+        left: 0;
+        bottom: 20px;
+
     }
 
     nav ul {
@@ -52,4 +58,47 @@
 
     }
 
+    .textos-banner h1,
+    .titulos-bio h2,
+    .titulo-livros h3,
+    .titulo-filmes h3 {
+        font-size: 40px
+    }
+
+    .textos-banner h3 {
+        font-size: 20px;
+    }
+
+    .resume-bio p {
+        font-size: 16px;
+    }
+
+    .conteudo-livros,
+    .conteudo-livros a,
+    .conteudo-filme,
+    .conteudo-filme a {
+        font-size: 14px;
+    }
+
+    .conteudo-livros h4,
+    .conteudo-filme h4 {
+        font-size: 20px;
+    }
+}
+
+/*Quebra para detalhes de espaçamento em celulares memores*/
+@media only screen and (max-width:410px) {
+    .card-filmes {
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .textos-rodape {
+        line-height: 25px;
+    }
+
+    #mais-info .container {
+        margin: 0 30px;
+    }
 }

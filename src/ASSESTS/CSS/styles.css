@@ -75,8 +75,9 @@ nav ul li a {
     transition: all .5s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: #1c1c1c;
+nav a:hover {
+
+    background-color: #2e2b2b;
 
 }
 
