@@ -47,6 +47,6 @@ git clone git@github.com:mari-moreira/TBob-Proctor.git
 ~~~
 
 ***
-Feito com por <strong>Mariana</strong> com muito ❤️
+Feito por <strong>Mariana</strong> com muito ❤️
 
 </div>
