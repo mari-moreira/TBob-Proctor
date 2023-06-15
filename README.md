@@ -2,7 +2,7 @@
 
 # Bob Proctor
 
-![Demo](./src/ASSESTS/IMAGES/demo.png)
+![Demo](./src/ASSESTS/IMAGES/apresentacao.gif)
 
 
 
@@ -10,7 +10,7 @@
 
 
 ## 🎯Objetivo 
-Desenvolver uma Página de Tributo a alguém especial .Para treinar os conceitos desenvolvidos no Curso B7Web . 
+Desenvolver uma Página de Tributo a alguém especial .Para treinar os conceitos ensinados  no Curso B7Web . 
 
 ## 💻 Tecnologias Utilizadas
 
@@ -21,17 +21,6 @@ Desenvolver uma Página de Tributo a alguém especial .Para treinar os conceitos
 
 * Fontawesome
 * Google Fonts
-
-<br>
-
-## Prévia 
-
-![Previa Desktop](./src/ASSESTS/IMAGES/Desktop_Gif.gif)
-
-
-<br>
-
-![Previa Mobile](./src/ASSESTS/IMAGES/Mobile_Gif.gif)
 
 <br>
 
